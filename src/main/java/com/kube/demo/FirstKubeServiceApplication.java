@@ -11,7 +11,7 @@ public class FirstKubeServiceApplication {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "Hello Kubernetes!";
+		return "Hello Kubernetes!!";
 	}
 	
 	public static void main(String[] args) {
