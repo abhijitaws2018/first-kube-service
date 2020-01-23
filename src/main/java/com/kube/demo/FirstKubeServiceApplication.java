@@ -1,5 +1,7 @@
 package com.kube.demo;
 
+import java.util.Date;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +13,8 @@ public class FirstKubeServiceApplication {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "Hello Kubernetes!! finally !!! Joyka !!!!\n";
+		return "Hello Kubernetes!! finally !!! Joyka, kemon acchis !!!!\n "
+				+ new Date() + "\n";
 	}
 	
 	public static void main(String[] args) {
